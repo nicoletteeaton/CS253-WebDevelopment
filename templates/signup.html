@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<h1>Signup</h1>
+	<form method ='post' action = '/signup'>
+		<label>
+		Username
+		<input type = 'text' name = "username" value = "{{username}}">
+		<font color = 'red' size = +2>{{error_username}}</font>
+		</label>
+		<br>
+		<label>
+		Password
+		<input type = 'password' name = "password" value = "{{password}}">
+		<font color = 'red' size = +2>{{error_password}}</font>
+		</label>
+		<br>
+		<label>
+		Verify Password
+		<input type = 'password' name = "verify" value = "{{verify}}">
+		<font color = 'red' size = +2>{{error_verify}}</font>
+		</label>
+		<br>
+		E-mail
+		<input type = 'text' name = 'email' value = "{{email}}">
+		<font color = 'red' size = +2>{{error_email}}</font>
+		</label>
+		<br>
+		
+		<input type = "submit">
+
+	</form>
+</html>

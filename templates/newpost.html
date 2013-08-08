@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Bean's blog</title>
+	</head>
+
+	<style type = "text/css">
+
+		body {
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+
+		.error {
+			color: red;
+		}
+
+		label {
+			display: block;
+			font-size: 20px;
+		}
+
+	</style>
+
+	<body>
+		<h1>New Post</a></h1>
+		<form method = 'post'>
+			<label>
+				<div>Subject</div>
+				<input type= 'text' name= 'subject' value="{{subject}}">
+			</label>
+
+			<label>
+				<div>Content</div>
+				<textarea name='content' value = '{{content}}'></textarea>
+			</label>
+
+			<div class='error'>{{error}}</div>
+
+			<input type='submit'>
+		</form>
+
+		<hr>

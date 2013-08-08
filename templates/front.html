@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Bean's blog</title>
+	</head>
+
+	<style type = "text/css">
+
+		body {
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+
+		.error {
+			color: red;
+		}
+
+		label {
+			display: block;
+			font-size: 20px;
+		}
+
+	</style>
+
+	<h1>Bean's Blog</h1>
+
+		<hr>
+
+		{% for entry in entries %}
+			<div class = "entry">
+				<div class = "entry-subject">{{entry.subject}}</div>
+				<pre class = "entry-content">{{entry.content}}</pre>
+			</div>
+		{% endfor %}
+
+	</body>
+</html>
